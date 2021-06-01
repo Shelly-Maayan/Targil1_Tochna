@@ -90,10 +90,8 @@ public class WarGame {
             else
                 System.out.println(curr_winner.getPlayerName() + " won the war");
 
-            while (!secondPackAbc.isEmpty())
+            while (!secondPackAbc.isEmpty() && !firstPackAbc.isEmpty())
                 curr_winner.addToWinCards(secondPackAbc.removeTopCard());
-
-            while (!firstPackAbc.isEmpty())
                 curr_winner.addToWinCards(firstPackAbc.removeTopCard());
 
             countRounds++;

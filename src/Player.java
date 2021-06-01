@@ -44,9 +44,8 @@ public class Player {
         /** If there's no play cards, shuffles win cards and uses them */
         if (this.playCards.isEmpty()) {
             this.winCards.shuffle();
-            int size = this.winCards.getCardList().size();
 
-            for (int i = 0; i < size ; i++)
+            while(!this.winCards.isEmpty())
                 this.playCards.addCard(this.winCards.removeBottomCard());
         }
         return this.playCards.removeTopCard();
