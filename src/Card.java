@@ -3,16 +3,25 @@ public class Card {
     private Shape shape;
     private String image;
 
+    /** Constants declaration */
     public static final int ACE = 1;
     public static final int PRINCE = 11;
     public static final int QUEEN = 12;
     public static final int KING = 13;
 
-
+    /**
+     * Constructor for card.
+     *
+     * Creates a new card
+     *
+     * @param cardNumber card number between 1-13
+     * @param shape shape of card out of four shapes
+     */
     public Card(int cardNumber, Shape shape) {
         this.cardNumber = cardNumber;
         this.shape = shape;
 
+        /** Matches image to card */
         switch (cardNumber) {
             case ACE:
                 this.image = "Ace of " + this.shape;
@@ -32,6 +41,13 @@ public class Card {
         }
     }
 
+    /**
+     * Compares two card and determines which card won
+     *
+     * Returns 0 if two card are equal, -1 if other card is bigger and 1 otherwise
+     *
+     * @param other another card, to compare to current card
+     */
     public int compare(Card other) {
         if (this.cardNumber < other.cardNumber)
             return -1;
@@ -41,12 +57,19 @@ public class Card {
 
         return 1;
     }
+
+    /**
+     * Returns current card number
+     */
+    public int getCardNumber() {
+        return this.cardNumber;
+    }
+
+    /**
+     * Print method for card object
+     */
     @Override
     public String toString() {
         return this.image;
-    }
-
-    public int getCardNumber() {
-        return this.cardNumber;
     }
 }
