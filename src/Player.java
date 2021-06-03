@@ -73,15 +73,4 @@ public class Player {
         return this.name;
     }
 
-    public void getWinCards() {
-        for (int i=0; i < this.winCards.getCardList().size(); i++)  {
-            System.out.println(this.winCards.getCardList().get(i));
-        }
-    }
-
-    public void getplayCards() {
-        for (int i=0; i < this.playCards.getCardList().size(); i++)  {
-            System.out.println(this.playCards.getCardList().get(i));
-        }
-    }
 }

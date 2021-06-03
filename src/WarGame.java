@@ -68,6 +68,7 @@ public class WarGame {
                     firstPackAbc.addCard(currFirstCard);
                     secondPackAbc.addCard(currSecondCard);
 
+
                     if(i < 2) {
                         System.out.println(firstAbc + " drew a war card");
                         System.out.println(secondAbc + " drew a war card");
@@ -90,23 +91,9 @@ public class WarGame {
             else
                 System.out.println(curr_winner.getPlayerName() + " won the war");
 
-            while (!secondPackAbc.isEmpty() && !firstPackAbc.isEmpty())
+            while (!secondPackAbc.isEmpty() && !firstPackAbc.isEmpty()) {
                 curr_winner.addToWinCards(secondPackAbc.removeTopCard());
                 curr_winner.addToWinCards(firstPackAbc.removeTopCard());
-
-
-
-            if (countRounds == 19 || countRounds == 20 || countRounds == 21 )
-            {
-                System.out.println("----------------------------------------");
-                System.out.println("wincards");
-                System.out.println(countRounds);
-                secondPlayer.getWinCards();
-                System.out.println("----------------------------------------");
-                System.out.println("playcards");
-                secondPlayer.getplayCards();
-                System.out.println("----------------------------------------");
-
             }
 
             countRounds++;
