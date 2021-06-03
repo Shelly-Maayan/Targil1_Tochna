@@ -94,6 +94,21 @@ public class WarGame {
                 curr_winner.addToWinCards(secondPackAbc.removeTopCard());
                 curr_winner.addToWinCards(firstPackAbc.removeTopCard());
 
+
+
+            if (countRounds == 19 || countRounds == 20 || countRounds == 21 )
+            {
+                System.out.println("----------------------------------------");
+                System.out.println("wincards");
+                System.out.println(countRounds);
+                secondPlayer.getWinCards();
+                System.out.println("----------------------------------------");
+                System.out.println("playcards");
+                secondPlayer.getplayCards();
+                System.out.println("----------------------------------------");
+
+            }
+
             countRounds++;
         }
        if (firstAbc.outOfCards())
