@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Deck {
     private ArrayList<Card> cardList;
@@ -10,9 +9,7 @@ public class Deck {
 
     /**
      * Constructor for deck.
-     *
      * Creates a new deck
-     *
      * @param init boolean which defines if deck should be full or empty
      */
     public Deck(boolean init) {
@@ -29,7 +26,6 @@ public class Deck {
 
     /**
      * Adds new card to deck
-     *
      * @param card a new card to be added to deck
      */
     public void addCard(Card card) {
@@ -68,7 +64,6 @@ public class Deck {
 
     /**
      * Swaps between two cards (used when shuffling)
-     *
      * @param firstIndex index of first card to be switched
      * @param secondIndex index of second card to be switched
      */

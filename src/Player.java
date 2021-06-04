@@ -7,9 +7,7 @@ public class Player {
 
     /**
      * Constructor for player.
-     *
      * Resets two decks of player to be empty
-     *
      * @param name name of new player
      */
     public Player(String name) {
@@ -20,7 +18,6 @@ public class Player {
 
     /**
      * Adds a card to play cards deck
-     *
      * @param card card to be added to play cards
      */
     public void addToPlayCards(Card card) {
@@ -29,7 +26,6 @@ public class Player {
 
     /**
      * Adds a card to win cards deck
-     *
      * @param card card to be added to win cards
      */
     public void addToWinCards(Card card) {
@@ -72,5 +68,4 @@ public class Player {
     public String getPlayerName() {
         return this.name;
     }
-
 }

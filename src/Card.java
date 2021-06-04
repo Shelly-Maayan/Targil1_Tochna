@@ -11,9 +11,7 @@ public class Card {
 
     /**
      * Constructor for card.
-     *
      * Creates a new card
-     *
      * @param cardNumber card number between 1-13
      * @param shape shape of card out of four shapes
      */
@@ -43,9 +41,7 @@ public class Card {
 
     /**
      * Compares two card and determines which card won
-     *
      * Returns 0 if two card are equal, -1 if other card is bigger and 1 otherwise
-     *
      * @param other another card, to compare to current card
      */
     public int compare(Card other) {

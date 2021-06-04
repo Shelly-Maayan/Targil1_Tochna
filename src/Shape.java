@@ -1,4 +1,8 @@
+
 public enum Shape {
+    /**
+     * Matches each shape to its symbol
+     */
     Spades {
         public String toString() {
             return "♠";
